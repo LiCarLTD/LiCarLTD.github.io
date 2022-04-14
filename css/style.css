@@ -1,0 +1,29 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+header {
+    background-color: brown;
+    height: 15vh;
+}
+main {
+    display: flex;
+}
+.main__container {
+    background-color: aqua;
+    height: 70vh;
+    width: 50vw;
+}
+
+.main__containerDos{
+    background-color: yellow;
+    width: 50vw;
+}
+footer {
+    background-color: yellowgreen;
+    height: 15vh;
+}
