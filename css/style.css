@@ -1,3 +1,8 @@
+:root{
+    --color-primario:#071540;
+    --color-segundario:#F2F2F2;
+    --color-terciario:#0f9b0f;
+}
 * {
     padding: 0px;
     margin: 0px;
@@ -5,25 +10,97 @@
 }
 html {
     font-size: 62.5%;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 header {
-    background-color: brown;
+    display: flex;
+    background-color: var(--color-primario);
     height: 15vh;
+    padding-top: 2rem;
+    color: var(--color-segundario);
+    flex-direction: row-reverse;
+}
+.header-titulo {
+    width: 85%;
+    padding-left: 4rem;
+}
+.header-logo {
+    width: 15%;
+    padding-left: 5rem;
 }
 main {
     display: flex;
+    padding-left: 2rem;
 }
 .main__container {
-    background-color: aqua;
-    height: 70vh;
+    background-color: var(--color-segundario);
+    height: 77vh;
     width: 50vw;
 }
 
 .main__containerDos{
-    background-color: yellow;
+    background-color: var(--color-segundario);
     width: 50vw;
+    padding-top: 4%;
 }
 footer {
-    background-color: yellowgreen;
-    height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3rem;
+    background-color: var(--color-primario);
+    height: 8vh;
+    color: var(--color-segundario);
+    justify-content: center;
+}
+h1 {
+    font-size: 2.5rem;
+    color: var(--color-terciario);
+}
+img {
+    width: 7rem;
+    height: auto;
+}
+h2 {
+    font-size: 2rem;
+}
+.header-titulo h2 {
+    padding-left: 16%;
+}
+.header-titulo h1 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 3rem;
+}
+.complemento {
+    font-size: 2rem;
+    padding-left: 5%;
+}
+.whatsapp {
+    width: 50px;
+    height: auto;
+}
+footer h2 {
+    padding-top: 1%;
+}
+.Link:link{
+    border: 0px #071540 solid;
+    padding: 7px;
+    color: var(--color-segundario);
+}
+.Link:visited{
+    color: var(--color-segundario);
+    background-color: var(--color-primario);
+}
+.Link:active{
+    color: var(--color-segundario);
+    background-color: var(--color-primario);
+}
+.footer-h2{
+    padding-left: 3%;
+}
+.Link:hover{
+    color: var(--color-segundario);
+    background-color: #1339aa;
 }
