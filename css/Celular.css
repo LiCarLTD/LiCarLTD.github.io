@@ -1,0 +1,213 @@
+:root{
+    --color-primario:#071540;
+    --color-segundario:#F2F2F2;
+    --color-terciario:#0f9b0f;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.container{
+    display: flex;
+    width: 100%;
+    min-width: 150px;
+    min-height: 100px;
+    flex-wrap: wrap;
+    background-color: var(--color-segundario);
+}
+header{
+    display: flex;
+    background-color: var(--color-primario);
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 100%;
+}
+.header-logo{
+    width: 20%;
+}
+.header-logo img{
+    width: 50px;
+}
+.header-titulo{
+    width: 100%;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main__container{
+    padding-left: 5%;
+    width: 100%;
+}
+.main__containerDos{
+    width: 100%;
+    padding-left: 5%;
+    padding-bottom: 4%;
+}
+.header_titulo-h1{
+    color: var(--color-terciario);
+    font-size: 1.8rem;
+}
+.header_titulo-h2{
+    color: var(--color-segundario);
+    font-size: 1.5rem;
+}
+h1{
+    font-size: 2rem;
+    color: var(--color-terciario);
+}
+.main_container-title{
+    color: black;
+    font-size: 2.5rem;
+}
+.complemento{
+    font-size: 1.5rem;
+}
+footer{
+    display: flex;
+    background-color: var(--color-primario);
+    width: 100%;
+}
+.whatsapp{
+    width: 60px;
+    height: 60px;
+}
+.Link:link{
+    border: 0px #071540 solid;
+    padding: 7px;
+    color: var(--color-segundario);
+}
+.Link:visited{
+    color: var(--color-segundario);
+    background-color: var(--color-primario);
+}
+.Link:active{
+    color: var(--color-segundario);
+    background-color: var(--color-primario);
+}
+.Link:hover{
+    color: var(--color-segundario);
+    background-color: #1339aa;
+}
+.footer-h2{
+    color: var(--color-terciario);
+    font-size: 1.2rem;
+    padding-left: 3%;
+}
+@media (min-width: 600px){
+    .main__container{
+        width: 50%;
+        padding-bottom: 10px;
+    }
+    .main__containerDos{
+        width: 50%;
+    }
+    footer{
+        height: auto;
+    }
+    .footer-h2{
+        font-size: 1.5rem;
+        align-self: center;
+    }
+}
+@media (min-width:1024px){
+    header {
+        display: flex;
+        background-color: var(--color-primario);
+        height: 15vh;
+        padding-top: 2rem;
+        color: var(--color-segundario);
+        flex-direction: row-reverse;
+    }
+    .header-titulo {
+        width: 85%;
+        padding-left: 4rem;
+    }
+    .header-logo {
+        width: 15%;
+        padding-left: 5rem;
+    }
+    main {
+        display: flex;
+        padding-left: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main__container {
+        background-color: var(--color-segundario);
+        height: 77vh;
+        width: 50%;
+    }
+    
+    .main__containerDos{
+        background-color: var(--color-segundario);
+        width: 50%;
+        padding-top: 4%;
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 3rem;
+        background-color: var(--color-primario);
+        height: 8vh;
+        color: var(--color-segundario);
+        justify-content: center;
+    }
+    h1 {
+        font-size: 2.5rem;
+        color: var(--color-terciario);
+    }
+    img {
+        width: 7rem;
+        height: auto;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .header-titulo h2 {
+        padding-left: 16%;
+    }
+    .header-titulo h1 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 3rem;
+    }
+    .complemento {
+        font-size: 2rem;
+        padding-left: 5%;
+    }
+    .whatsapp {
+        width: 50px;
+        height: auto;
+    }
+    footer h2 {
+        padding-top: 1%;
+    }
+    .Link:link{
+        border: 0px #071540 solid;
+        padding: 7px;
+        color: var(--color-segundario);
+    }
+    .Link:visited{
+        color: var(--color-segundario);
+        background-color: var(--color-primario);
+    }
+    .Link:active{
+        color: var(--color-segundario);
+        background-color: var(--color-primario);
+    }
+    .footer-h2{
+        padding-left: 3%;
+    }
+    .Link:hover{
+        color: var(--color-segundario);
+        background-color: #1339aa;
+    }
+}
